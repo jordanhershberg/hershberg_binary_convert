@@ -1,12 +1,12 @@
 def DecimalToBinary(num):
-
+  binary_num = ""
   if num == 0:
     return "0"
-  binary_num = ""
   while num > 0:
     remainder = num % 2
     binary_num = str(remainder) + binary_num
     num = int(num / 2)
+
   return binary_num
 
 decimal = int(input("What is your decimal number? \n"))
